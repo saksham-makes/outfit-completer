@@ -119,8 +119,8 @@ function findColour(text) {
         "red",
         "black",
         "white",
-        "blue",
         "navy",
+        "blue",
         "green",
         "grey",
         "gray",
@@ -153,83 +153,83 @@ function getRecommendations(colour) {
     const recommendations = {
 
         red: {
-            pants: "black grey",
-            shoes: "white black"
+            pants: "black",
+            shoes: "white"
         },
 
         black: {
-            pants: "blue grey",
+            pants: "blue",
             shoes: "white"
         },
 
         white: {
-            pants: "black blue",
-            shoes: "black white"
+            pants: "blue",
+            shoes: "black"
         },
 
         blue: {
-            pants: "black grey",
-            shoes: "white black"
+            pants: "grey",
+            shoes: "white"
         },
 
         navy: {
-            pants: "beige grey",
-            shoes: "white brown"
+            pants: "beige",
+            shoes: "white"
         },
 
         green: {
-            pants: "black beige",
-            shoes: "white black"
+            pants: "beige",
+            shoes: "white"
         },
 
         grey: {
-            pants: "black blue",
-            shoes: "white black"
+            pants: "black",
+            shoes: "white"
         },
 
         gray: {
-            pants: "black blue",
-            shoes: "white black"
+            pants: "black",
+            shoes: "white"
         },
 
         brown: {
-            pants: "beige black",
-            shoes: "white brown"
+            pants: "black",
+            shoes: "white"
         },
 
         beige: {
-            pants: "black brown",
-            shoes: "white black"
+            pants: "black",
+            shoes: "white"
         },
 
         cream: {
-            pants: "black brown",
-            shoes: "white black"
+            pants: "brown",
+            shoes: "white"
         },
 
         pink: {
-            pants: "black grey",
+            pants: "grey",
             shoes: "white"
         },
 
         purple: {
-            pants: "black grey",
-            shoes: "white black"
+            pants: "black",
+            shoes: "white"
         },
 
         yellow: {
-            pants: "black blue",
-            shoes: "white black"
+            pants: "blue",
+            shoes: "white"
         },
 
         orange: {
-            pants: "black beige",
-            shoes: "white black"
+            pants: "black",
+            shoes: "white"
         },
 
         neutral: {
-            pants: "black blue",
-            shoes: "white black"
+            pants: "black",
+            shoes: "white"
         }
     };
 
@@ -502,8 +502,8 @@ selectTopButton.addEventListener(
 
         try {
 
-            // Look for a colour in both the user's
-            // search and the selected eBay product.
+            // Detect the colour from the user's search
+            // and the selected eBay product title.
 
             const colourText =
                 searchInput.value +
@@ -514,13 +514,14 @@ selectTopButton.addEventListener(
                 findColour(colourText);
 
 
-            // Get colours that work with the top.
+            // Choose one specific matching colour
+            // for the bottoms and shoes.
 
             const matchingColours =
                 getRecommendations(selectedColour);
 
 
-            // Build new eBay searches.
+            // Build the recommendation searches.
 
             const pantsSearch =
                 `mens ${matchingColours.pants} pants jeans`;
@@ -545,7 +546,7 @@ selectTopButton.addEventListener(
             );
 
 
-            // Search eBay for both at the same time.
+            // Search eBay for both recommendations.
 
             const results =
                 await Promise.all([
@@ -617,7 +618,7 @@ selectTopButton.addEventListener(
 
 
             message.textContent =
-                `Matching pieces found for your ${selectedColour} top.`;
+                `Matching pieces found for your ${selectedColour} top: ${matchingColours.pants} bottoms and ${matchingColours.shoes} shoes.`;
 
 
             selectTopButton.textContent =
