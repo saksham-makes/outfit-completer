@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Outfit Completer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header>
+            <h1>Outfit Completer</h1>
+            <p>Start with something you want to wear.</p>
+        </header>
+
+
+        <div class="search-area">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Try: t-shirt"
+            >
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+
+        <p id="message">
+            Search for a top to start your outfit.
+        </p>
+
+
+        <!-- TOP -->
+
+        <section class="outfit-row">
+
+            <button
+                class="arrow"
+                id="shirtPrevious"
+                disabled
+            >
+                ‹
+            </button>
+
+
+            <div class="item-card">
+
+                <p class="item-label">TOP</p>
+
+                <div class="image-area">
+
+                    <span class="placeholder">
+                        👕
+                    </span>
+
+                    <img
+                        id="shirtImage"
+                        alt="Selected top"
+                        hidden
+                    >
+
+                </div>
+
+                <p id="shirtName">
+                    Choose a top
+                </p>
+
+            </div>
+
+
+            <button
+                class="arrow"
+                id="shirtNext"
+                disabled
+            >
+                ›
+            </button>
+
+        </section>
+
+
+        <button
+            id="selectTopButton"
+            disabled
+        >
+            Select Top
+        </button>
+
+
+        <!-- RECOMMENDATIONS -->
+
+        <div id="recommendations" hidden>
+
+            <p class="recommendation-title">
+                Complete your outfit
+            </p>
+
+
+            <!-- BOTTOM -->
+
+            <section class="outfit-row">
+
+                <button
+                    class="arrow"
+                    id="pantsPrevious"
+                >
+                    ‹
+                </button>
+
+
+                <div class="item-card">
+
+                    <p class="item-label">
+                        BOTTOM
+                    </p>
+
+                    <div class="image-area">
+
+                        <span class="placeholder">
+                            👖
+                        </span>
+
+                        <img
+                            id="pantsImage"
+                            alt="Suggested bottom"
+                            hidden
+                        >
+
+                    </div>
+
+                    <p id="pantsName">
+                        Suggested bottom
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="arrow"
+                    id="pantsNext"
+                >
+                    ›
+                </button>
+
+            </section>
+
+
+            <!-- SHOES -->
+
+            <section class="outfit-row">
+
+                <button
+                    class="arrow"
+                    id="shoesPrevious"
+                >
+                    ‹
+                </button>
+
+
+                <div class="item-card">
+
+                    <p class="item-label">
+                        SHOES
+                    </p>
+
+                    <div class="image-area">
+
+                        <span class="placeholder">
+                            👟
+                        </span>
+
+                        <img
+                            id="shoesImage"
+                            alt="Suggested shoes"
+                            hidden
+                        >
+
+                    </div>
+
+                    <p id="shoesName">
+                        Suggested shoes
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="arrow"
+                    id="shoesNext"
+                >
+                    ›
+                </button>
+
+            </section>
+
+
+            <button
+                id="completeButton"
+            >
+                Complete Outfit
+            </button>
+
+
+            <p id="completeMessage"></p>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

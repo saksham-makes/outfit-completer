@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #181818;
+}
+
+.app {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 28px 20px 40px;
+    background: white;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 7px;
+}
+
+header p {
+    margin: 0;
+    color: #666;
+}
+
+.search-area {
+    display: flex;
+    gap: 8px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#searchButton {
+    border: none;
+    border-radius: 10px;
+    padding: 0 18px;
+    background: #111;
+    color: white;
+    cursor: pointer;
+}
+
+#message {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin: 16px 0 25px;
+}
+
+.outfit-row {
+    display: grid;
+    grid-template-columns: 45px 1fr 45px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.item-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 12px;
+    background: #fafafa;
+}
+
+.item-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #888;
+    margin: 0 0 5px;
+}
+
+.image-area {
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.placeholder {
+    font-size: 75px;
+    filter: grayscale(1);
+    opacity: 0.25;
+}
+
+.item-card > p:last-child {
+    min-height: 35px;
+    margin-bottom: 0;
+}
+
+.arrow {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: #111;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.arrow:disabled {
+    background: #ddd;
+    cursor: default;
+}
+
+#selectTopButton,
+#completeButton {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#selectTopButton {
+    margin-bottom: 25px;
+}
+
+#selectTopButton:disabled {
+    background: #ccc;
+    cursor: default;
+}
+
+.recommendation-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0 22px;
+}
+
+#completeMessage {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 18px;
+}
