@@ -11,11 +11,19 @@ const PORT = process.env.PORT || 3000;
 // SERVE WEBSITE FILES
 // ---------------------------------------
 
-app.use(express.static(__dirname));
-
-// Explicitly send index.html for the homepage
+// Homepage
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
+});
+
+// CSS
+app.get("/style.css", function (req, res) {
+    res.sendFile(path.join(__dirname, "style.css"));
+});
+
+// JavaScript
+app.get("/script.js", function (req, res) {
+    res.sendFile(path.join(__dirname, "script.js"));
 });
 
 
