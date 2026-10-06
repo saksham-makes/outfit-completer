@@ -1,13 +1,22 @@
 require("dotenv").config();
 
 const express = require("express");
+const path = require("path");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
-// Serve the website files
+// ---------------------------------------
+// SERVE WEBSITE FILES
+// ---------------------------------------
+
 app.use(express.static(__dirname));
+
+// Explicitly send index.html for the homepage
+app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
 
 
 // ---------------------------------------
@@ -18,6 +27,10 @@ async function getEbayToken() {
 
     const clientId = process.env.EBAY_CLIENT_ID;
     const clientSecret = process.env.EBAY_CLIENT_SECRET;
+
+    if (!clientId || !clientSecret) {
+        throw new Error("eBay environment variables are missing.");
+    }
 
     const credentials =
         Buffer.from(`${clientId}:${clientSecret}`).toString("base64");
@@ -157,13 +170,24 @@ app.get("/api/search", async function (req, res) {
 
 
 // ---------------------------------------
-// START SERVER
+// START LOCAL SERVER
 // ---------------------------------------
 
-app.listen(PORT, function () {
+if (require.main === module) {
 
-    console.log(
-        `Outfit Completer running at http://localhost:${PORT}`
-    );
+    app.listen(PORT, function () {
 
-});
+        console.log(
+            `Outfit Completer running at http://localhost:${PORT}`
+        );
+
+    });
+
+}
+
+
+// ---------------------------------------
+// EXPORT FOR VERCEL
+// ---------------------------------------
+
+module.exports = app;
