@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <g id="tee" fill="#fbfaf5" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M31 18l25-9 18 8 18-8 25 9 31 33-23 19-17-15v91H40V55L23 70 0 51z"/>
+      <path d="M56 9c2 17 34 18 36 0M40 55c19 12 57 12 88 0M48 67c12 8 44 9 72 0" fill="none"/>
+      <path d="M46 82c16 5 50 5 65-1M48 97c15 4 43 4 58-1" fill="none" stroke-width="1.8"/>
+      <path d="M24 51l16 4M137 51l-17 4" fill="none" stroke-width="1.8"/>
+    </g>
+    <g id="longtee" fill="#edf2f7" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M45 8l24-6 24 6 37 24-19 30-14-9v87H25V53l-14 9-19-30z"/>
+      <path d="M69 2v145M46 15c4 15 42 15 46 0M31 52c17 9 59 9 76 0" fill="none"/>
+      <path d="M37 70c16 7 48 7 64 0M33 91c18 5 54 5 72 0" fill="none" stroke-width="1.7"/>
+    </g>
+    <g id="hoodie" fill="#7f9bc7" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M70 10C43 10 29 27 29 50L4 72l23 37 17-13v63h52v-63l17 13 23-37-26-22C110 27 97 10 70 10z"/>
+      <path d="M42 48c1-25 12-35 28-35s27 10 28 35v24H42z" fill="#dfe6f1"/>
+      <path d="M43 49c7 19 47 19 54 0M48 71l-6 35M92 71l6 35" fill="none"/>
+      <path d="M52 111h36v48H52zM58 119h24M70 111v48" fill="#edf2f7"/>
+      <path d="M61 75v22M79 75v22" fill="none" stroke-width="2"/>
+    </g>
+    <g id="pants" fill="#aebfd8" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 7h98l10 162-43 8-17-110-17 110-43-8z"/>
+      <path d="M20 7l48 18 50-18M68 25v42M20 7v31M118 7v31" fill="none"/>
+      <path d="M29 40l30 10M107 40l-30 10M68 67l-15 92M68 67l15 92" fill="none" stroke-width="1.8"/>
+      <circle cx="68" cy="12" r="2.4" fill="#17243e"/>
+      <path d="M20 174l17 3M85 177l43-8" fill="none"/>
+    </g>
+    <g id="shorts" fill="#91a8c9" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 8h108l11 94-49 5-11-48-10 48-51-5z"/>
+      <path d="M15 8l59 19 49-19M74 27v32M15 8v25M123 8v25" fill="none"/>
+      <path d="M29 37l29 9M119 37l-31 9M74 59l-10 48M74 59l11 48" fill="none" stroke-width="1.7"/>
+      <circle cx="74" cy="13" r="2.4" fill="#17243e"/>
+    </g>
+    <g id="joggers" fill="#c2cbe0" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 8h102l17 145-38 15-25-113-25 113-38-15z"/>
+      <path d="M18 8l56 20 46-20M74 28v127M18 8v25M120 8v25" fill="none"/>
+      <path d="M27 43l30 10M121 43l-31 10M38 151l11-11M109 151l-12-11" fill="none" stroke-width="1.8"/>
+    </g>
+    <g id="cap" fill="#667fa9" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 46C14 17 31 5 55 5c25 0 43 12 45 41z"/>
+      <path d="M100 46c29 1 38 11 43 25-28 11-62 5-82-19z" fill="#dce5f2"/>
+      <path d="M55 5v41M29 35h52M20 46h79" fill="none"/>
+      <path d="M100 46c12 6 26 12 43 25" fill="none" stroke-width="1.8"/>
+    </g>
+    <g id="beanie" fill="#4d668f" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 49C18 16 38 2 62 2s44 14 44 47z" fill="#c0cbe1"/>
+      <path d="M10 48h104v23H10zM62 3v45M34 48V24M90 48V24" fill="#879ac0"/>
+      <path d="M18 48c12-8 76-8 88 0M20 57h84M30 25c18 7 46 7 64 0" fill="none" stroke-width="1.8"/>
+    </g>
+    <g id="sneaker" fill="#f8f8f3" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 29h45l24 43 45 15c15 5 20 16 14 30H8c-12 0-14-11-4-20l9-8z"/>
+      <path d="M29 42l52 29M22 57l64 29M8 117h133M40 44l30 31M54 39l30 32" fill="none" stroke-width="2"/>
+      <path d="M88 72l24 9" fill="none" stroke="#718caf" stroke-width="9"/>
+      <circle cx="35" cy="50" r="2" fill="#17243e"/><circle cx="47" cy="57" r="2" fill="#17243e"/>
+    </g>
+    <g id="jacket" fill="#718bad" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M70 8l31 16 34 32-27 30-18-17v83H50V69L32 86 5 56l34-32z"/>
+      <path d="M70 8v144M50 69h40M70 85v67M54 45l16 24 16-24" fill="none"/>
+      <circle cx="70" cy="99" r="2.4" fill="#17243e"/>
+      <path d="M54 111h32v30H54zM58 119h24" fill="#edf2f7" stroke-width="2"/>
+    </g>
+    <g id="dress" fill="#ccd4e8" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M54 8c18 0 31 12 31 27L73 58l48 112H-13L35 58 23 35C23 20 36 8 54 8z"/>
+      <path d="M30 35c14 17 34 17 48 0M34 58h40M8 111h92M32 72l-19 47M76 72l19 47" fill="none"/>
+      <path d="M18 124h72M28 145h48" fill="none" stroke-width="1.7"/>
+    </g>
+    <g id="bag" fill="#9dabc8" stroke="#17243e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 43h92l17 101H-7z"/>
+      <path d="M36 43V27C36 7 47 0 55 0s19 7 19 27v16M36 43V27c0-20 11-27 19-27" fill="none"/>
+      <path d="M55 43v101M9 43l46 30 46-30" fill="none" stroke-width="1.9"/>
+      <circle cx="55" cy="87" r="3" fill="#edf2f7"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="800" fill="#b9d6ef"/>
+
+  <g opacity=".96">
+    <use href="#tee" transform="translate(18 22) rotate(-10) scale(.72)"/>
+    <use href="#pants" transform="translate(190 18) rotate(7) scale(.67)"/>
+    <use href="#beanie" transform="translate(350 18) rotate(-12) scale(.78)"/>
+    <use href="#hoodie" transform="translate(500 20) rotate(9) scale(.70)"/>
+    <use href="#cap" transform="translate(675 30) rotate(-8) scale(.82)"/>
+
+    <use href="#shorts" transform="translate(-20 155) rotate(9) scale(.72)"/>
+    <use href="#longtee" transform="translate(125 145) rotate(-8) scale(.73)"/>
+    <use href="#sneaker" transform="translate(292 150) rotate(12) scale(.70)"/>
+    <use href="#joggers" transform="translate(430 138) rotate(-9) scale(.66)"/>
+    <use href="#dress" transform="translate(610 138) rotate(8) scale(.62)"/>
+    <use href="#bag" transform="translate(735 165) rotate(-12) scale(.65)"/>
+
+    <use href="#jacket" transform="translate(25 300) rotate(-7) scale(.70)"/>
+    <use href="#cap" transform="translate(178 286) rotate(11) scale(.74)"/>
+    <use href="#tee" transform="translate(305 290) rotate(-12) scale(.68)"/>
+    <use href="#pants" transform="translate(468 278) rotate(8) scale(.66)"/>
+    <use href="#beanie" transform="translate(650 292) rotate(-8) scale(.74)"/>
+
+    <use href="#hoodie" transform="translate(-18 448) rotate(8) scale(.72)"/>
+    <use href="#sneaker" transform="translate(158 435) rotate(-11) scale(.76)"/>
+    <use href="#joggers" transform="translate(330 424) rotate(12) scale(.62)"/>
+    <use href="#shorts" transform="translate(494 438) rotate(-9) scale(.66)"/>
+    <use href="#longtee" transform="translate(635 430) rotate(7) scale(.66)"/>
+    <use href="#bag" transform="translate(730 450) rotate(10) scale(.58)"/>
+
+    <use href="#dress" transform="translate(18 590) rotate(9) scale(.60)"/>
+    <use href="#pants" transform="translate(188 575) rotate(-8) scale(.64)"/>
+    <use href="#jacket" transform="translate(360 580) rotate(11) scale(.68)"/>
+    <use href="#tee" transform="translate(520 580) rotate(-10) scale(.68)"/>
+    <use href="#cap" transform="translate(692 590) rotate(12) scale(.72)"/>
+
+    <use href="#beanie" transform="translate(-22 700) rotate(-8) scale(.68)"/>
+    <use href="#sneaker" transform="translate(110 718) rotate(8) scale(.70)"/>
+    <use href="#hoodie" transform="translate(280 700) rotate(-9) scale(.62)"/>
+    <use href="#joggers" transform="translate(445 704) rotate(8) scale(.58)"/>
+    <use href="#bag" transform="translate(620 718) rotate(-10) scale(.64)"/>
+  </g>
+
+  <!-- Extra small pieces make the tile dense like a cut-paper clothing collage. -->
+  <g opacity=".92" fill="#edf2f7" stroke="#17243e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#tee" transform="translate(82 105) rotate(15) scale(.34)"/>
+    <use href="#cap" transform="translate(390 105) rotate(-13) scale(.38)"/>
+    <use href="#shorts" transform="translate(575 105) rotate(9) scale(.34)"/>
+    <use href="#beanie" transform="translate(250 215) rotate(10) scale(.36)"/>
+    <use href="#dress" transform="translate(730 235) rotate(-15) scale(.31)"/>
+    <use href="#bag" transform="translate(95 385) rotate(-9) scale(.34)"/>
+    <use href="#tee" transform="translate(295 390) rotate(12) scale(.34)"/>
+    <use href="#cap" transform="translate(605 380) rotate(-11) scale(.36)"/>
+    <use href="#sneaker" transform="translate(452 515) rotate(12) scale(.34)"/>
+    <use href="#jacket" transform="translate(730 520) rotate(-8) scale(.34)"/>
+    <use href="#shorts" transform="translate(80 552) rotate(-12) scale(.34)"/>
+    <use href="#beanie" transform="translate(310 650) rotate(8) scale(.34)"/>
+  </g>
+</svg>

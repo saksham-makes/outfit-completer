@@ -12,13 +12,31 @@
 
 <body>
 
+    <div class="fashion-collage" aria-hidden="true">
+        <span class="collage-index">COLLECTION / 01</span>
+    </div>
+
     <main class="app">
 
         <header>
+            <p class="header-edition">THE DAILY EDIT</p>
             <h1>Outfit Completer</h1>
             <p>Start with something you want to wear.</p>
         </header>
 
+        <nav class="section-navigation" aria-label="Outfit Completer sections">
+            <a class="section-nav-link active" href="#outfit-studio" aria-current="location">
+                Outfit Studio
+            </a>
+            <a class="section-nav-link" href="#my-wardrobe">
+                My Wardrobe
+            </a>
+            <a class="section-nav-link" href="#saved-outfits">
+                Saved Outfits
+            </a>
+        </nav>
+
+        <section id="outfit-studio" class="outfit-studio-section" aria-label="Outfit Studio">
 
         <div class="search-area">
 
@@ -60,7 +78,7 @@
                 <div class="image-area">
 
                     <span class="placeholder">
-                        👕
+                        T
                     </span>
 
                     <img
@@ -96,6 +114,16 @@
             Select Top
         </button>
 
+        <button
+            id="surpriseButton"
+            type="button"
+            disabled
+            aria-label="Surprise me with a complete outfit"
+        >
+            <span aria-hidden="true">⤨</span>
+            Surprise Me
+        </button>
+
 
         <!-- RECOMMENDATIONS -->
 
@@ -127,7 +155,7 @@
                     <div class="image-area">
 
                         <span class="placeholder">
-                            👖
+                            B
                         </span>
 
                         <img
@@ -176,7 +204,7 @@
                     <div class="image-area">
 
                         <span class="placeholder">
-                            👟
+                            S
                         </span>
 
                         <img
@@ -213,7 +241,119 @@
 
             <p id="completeMessage"></p>
 
-        </div>
+        </section>
+
+
+        <!-- PERSONAL WARDROBE -->
+
+        <section id="my-wardrobe" class="wardrobe-section" aria-labelledby="wardrobe-heading">
+            <div class="wardrobe-heading">
+                <span class="wardrobe-eyebrow">PERSONAL STYLE</span>
+                <h2 id="wardrobe-heading">My Wardrobe</h2>
+                <p class="wardrobe-subtitle">Your style, organized in one place.</p>
+            </div>
+
+            <form id="clothingForm">
+                <div class="wardrobe-form-grid">
+                    <label class="wardrobe-field wardrobe-field-wide">
+                        <span>Clothing name</span>
+                        <input
+                            type="text"
+                            id="clothingName"
+                            placeholder="e.g. Black T-Shirt"
+                            required
+                        >
+                    </label>
+
+                    <fieldset class="category-field wardrobe-field-wide">
+                        <legend>Category</legend>
+                        <div class="category-options" aria-label="Clothing category">
+                            <button type="button" class="category-option" data-category="top">
+                                <span class="category-icon">◒</span>
+                                <span>Top</span>
+                            </button>
+                            <button type="button" class="category-option" data-category="bottom">
+                                <span class="category-icon">◓</span>
+                                <span>Bottom</span>
+                            </button>
+                            <button type="button" class="category-option" data-category="shoes">
+                                <span class="category-icon">◈</span>
+                                <span>Shoes</span>
+                            </button>
+                            <button type="button" class="category-option" data-category="accessory">
+                                <span class="category-icon">✦</span>
+                                <span>Accessory</span>
+                            </button>
+                        </div>
+                        <select id="clothingCategory" required aria-hidden="true" tabindex="-1">
+                            <option value="">Select category</option>
+                            <option value="top">Top</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="accessory">Accessory</option>
+                        </select>
+                    </fieldset>
+
+                    <label class="wardrobe-field">
+                        <span>Colour</span>
+                        <input
+                            type="text"
+                            id="clothingColour"
+                            placeholder="e.g. Black"
+                            required
+                        >
+                    </label>
+
+                    <label class="wardrobe-field">
+                        <span>Brand <small>Optional</small></span>
+                        <input
+                            type="text"
+                            id="clothingBrand"
+                            placeholder="e.g. Nike"
+                        >
+                    </label>
+
+                    <label class="wardrobe-field wardrobe-field-wide">
+                        <span>Image URL <small>Optional</small></span>
+                        <input
+                            type="url"
+                            id="clothingImage"
+                            placeholder="Paste an image link"
+                        >
+                    </label>
+                </div>
+
+                <div class="wardrobe-form-actions">
+                    <button type="submit" id="clothingSubmitButton">Add to Wardrobe</button>
+                    <button type="button" id="cancelEditButton" hidden>Cancel Edit</button>
+                </div>
+            </form>
+
+            <p id="clothingMessage"></p>
+
+            <div class="collection-heading">
+                <h3>Your Collection</h3>
+                <span id="wardrobeCount">0 items</span>
+            </div>
+
+            <div id="wardrobeItems" aria-live="polite">
+                <p>Loading your wardrobe...</p>
+            </div>
+        </section>
+
+
+        <!-- SAVED OUTFITS -->
+
+        <section id="saved-outfits" class="saved-section" aria-labelledby="saved-outfits-heading">
+            <h2 id="saved-outfits-heading">My Saved Outfits</h2>
+            <p class="saved-subtitle">Your completed outfit combinations.</p>
+
+            <button id="refreshOutfitsButton">Refresh Outfits</button>
+
+            <div id="savedOutfitsList">
+                <p>Loading your saved outfits...</p>
+            </div>
+        </section>
 
     </main>
 
